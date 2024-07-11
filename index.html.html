@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            margin: 0;
+        }
+        .todo-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            width: 300px;
+        }
+        .todo-container h1 {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+        }
+        .todo-container input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            margin-bottom: 20px;
+        }
+        .todo-container ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .todo-container ul li {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+        .todo-container ul li.completed {
+            text-decoration: line-through;
+            color: grey;
+        }
+        .todo-container button {
+            padding: 10px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            margin-right: 5px;
+        }
+        .todo-container .clear-btn {
+            background-color: blue;
+            color: white;
+        }
+        .todo-container .empty-btn {
+            background-color: red;
+            color: white;
+        }
+        .todo-container .save-btn {
+            background-color: green;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="todo-container">
+        <h1>My to-do list</h1>
+        <input type="text" placeholder="Add a new task">
+        <ul>
+            <li>My</li>
+            <li class="completed">to-do</li>
+            <li>list</li>
+        </ul>
+        <div>
+            <button class="clear-btn">Clear Completed</button>
+            <button class="empty-btn">Empty List</button>
+            <button class="save-btn">Save List</button>
+        </div>
+    </div>
+</body>
+</html>
